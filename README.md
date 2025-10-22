@@ -158,35 +158,35 @@
   
   <p style="font-size: 1.1em;">Siga os passos abaixo para rodar o projeto localmente:</p>
   
-  <ol style="padding-left: 20px; font-size: 1.1em; line-height: 1.7;">
-    
-    <li style="margin-bottom: 15px;">
-      <strong>Clone este repositório</strong>
-    </li>
-    
-    <li style="margin-bottom: 15px;">
-      <strong>Instale as dependências</strong><br>
-      <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.95em; margin-top: 10px;"><code>npm install</code></pre>
-    </li>
-    
-    <li style="margin-bottom: 15px;">
-      <strong>Configure as variáveis de ambiente</strong><br>
-      Crie um arquivo <code>.env</code> na raiz do projeto e adicione a sua string de conexão do MySQL:
-      <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.95em; margin-top: 10px;"><code>DATABASE_URL="mysql://USER:PASSWORD@HOST:PORT/DATABASE_NAME"</code></pre>
-    </li>
-    
-    <li style="margin-bottom: 15px;">
-      <strong>Execute as migrations do Prisma</strong><br>
-      Este comando irá criar as tabelas no seu banco de dados com base no <code>schema.prisma</code>:
-      <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.95em; margin-top: 10px;"><code>npx prisma migrate dev</code></pre>
-    </li>
-    
-    <li style="margin-bottom: 15px;">
-      <strong>Inicie o servidor de desenvolvimento</strong><br>
-      <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.95em; margin-top: 10px;"><code>npm run dev</code></pre>
-    </li>
-  </ol>
-  
+1.  **Clone este repositório**
+
+2.  **Instale as dependências**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Configure as variáveis de ambiente**
+
+    Crie um arquivo `.env` na raiz do projeto e adicione a sua string de conexão do MySQL:
+
+    ```ini
+    DATABASE_URL="mysql://USER:PASSWORD@HOST:PORT/DATABASE_NAME"
+    ```
+
+4.  **Execute as migrations do Prisma**
+
+    Este comando irá criar as tabelas no seu banco de dados com base no `schema.prisma`:
+
+    ```bash
+    npx prisma migrate dev
+    ```
+
+5.  **Inicie o servidor de desenvolvimento**
+    ```bash
+    npm run dev
+    ```
+
   <p style="font-size: 1.1em; background-color: #e8f5e9; padding: 15px; border-radius: 5px; border-left: 5px solid #4caf50; margin-top: 20px;">
     Pronto! O servidor estará rodando em <code>http://localhost:3333</code>.
   </p>
